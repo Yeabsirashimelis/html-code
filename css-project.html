@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: royalblue;
+        color: white;
+        padding: 15px 30px;
+      }
+
+      .nav a {
+        color: white;
+        margin-right: 20px;
+        text-decoration: none;
+      }
+
+      .gallery {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        padding: 20px;
+      }
+
+      .photo {
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>My Gallery</h1>
+      <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <section class="gallery">
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+      <div class="photo"><img src="/assets/man.jpg" /></div>
+    </section>
+  </body>
+</html>

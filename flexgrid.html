@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        background-color: lightgray;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+        /* gap: 100px; */
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+
+      .item {
+        background-color: lightblue;
+        padding: 20px;
+        margin: 5px;
+        flex-grow: 1;
+      }
+
+      .center-box {
+        display: flex;
+        justify-content: center;
+        background-color: green;
+        align-items: center;
+        height: 300px;
+        margin-bottom: 40px;
+      }
+
+      .text {
+        background-color: yellow;
+        padding: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      .menu {
+        display: flex;
+        gap: 15px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 30px;
+        margin-bottom: 40px;
+      }
+
+      .card {
+        background-color: lightgray;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        /* width: 250px; */
+        text-align: center;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+      }
+
+      .card img {
+        border-radius: 8px;
+      }
+
+      .grid {
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px;
+          grid-template-rows: 100px 100px; */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 1fr 2fr 1fr;
+        gap: 10px;
+        margin-bottom: 40px;
+        /* justify-items: center; */
+        align-items: center;
+      }
+
+      .grid div {
+        background-color: lightgreen;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- what is flexbox - 1D positioning-->
+    <!-- what is Grid - 2D positioning -->
+
+    <nav>
+      <div class="logo">MY SITE</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Help</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="item">One</div>
+      <div class="item">Two</div>
+      <div class="item">Three</div>
+      <div class="item">Four</div>
+    </div>
+
+    <div class="center-box">
+      <div class="text">Perfectly centered</div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="/assets/man.jpg" />
+        <h3>Card One</h3>
+        <p>This is a Flexbox card</p>
+      </div>
+
+      <div class="card">
+        <img src="/assets/man.jpg" />
+        <h3>Card Two</h3>
+        <p>Resizes Beautifully</p>
+      </div>
+
+      <div class="card">
+        <img src="/assets/man.jpg" />
+        <h3>Card Three</h3>
+        <p>Flex powerfull</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+
+    <!-- /////////////////////////////////////////////////////// -->
+  </body>
+</html>

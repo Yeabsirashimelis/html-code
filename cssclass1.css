@@ -1,0 +1,113 @@
+/* /*p {
+  color: blue;
+  font-size: 16px;
+}
+
+*/
+
+/*
+ELEMENT SELECTOR
+p {
+  
+}
+
+h1 {
+  
+}
+div, input, span, article
+
+
+CLASS SELECTOR
+
+*/
+
+h1 {
+  color: red;
+}
+/*
+p {
+  color: green;
+}
+
+ID SELECTOR
+
+ATTRIBUTE SELECTOR
+
+*/
+
+/* .class1 {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} */
+
+
+/*
+PSEUDO CLASS
+
+CSS SPECIFICITY ORDER
+
+1, INLINE STYLES
+2, ID SELECTOR
+3, CLASS SELECTOR
+4, ELEMENT SELECTOR
+*/
+
+/*
+#header1 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: blue;
+} */
+
+/* .class1 {
+  color: aqua;
+} */
+
+/*
+p {
+  color: brown;
+}
+
+} */
+
+.card {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  /* border: 2px solid gray; */
+  border-width: 2px;
+  border-style: solid;
+  border-color: gray;
+  /* background-color: gold; */
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#name {
+  color: rgb(100, 3, 3);
+}
+
+.bio {
+  color: rgb(46, 41, 11);
+  font-style: italic;
+}
+
+.button {
+  background-color: royalblue;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: darkblue;
+}
