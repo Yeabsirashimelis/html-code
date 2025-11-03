@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: green;
+        margin-bottom: 40px;
+      } */
+
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-size: 12px;
+      }
+
+      .container {
+        width: 20%;
+        padding: 2rem;
+
+        background-color: gray;
+      }
+
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: lightgray;
+      }
+
+      /* tablet and above */
+      @media (min-width: 768px) {
+        nav ul {
+          flex-direction: row;
+          justify-content: center;
+          background-color: gold;
+        }
+      }
+
+      /* desktop and above */
+      @media (min-width: 1200px) {
+        nav ul {
+          justify-content: space-between;
+          background-color: blue;
+          color: white;
+        }
+      }
+
+      /* APPROACH - MOBILE FIRST APPROACH */
+      /* mobile */
+      /* body {
+        background-color: lightcoral;
+        font-size: 30px;
+      }
+
+      /* tablet */
+      /* @media (min-width: 600px) {
+        body {
+          background-color: lightgreen;
+          font-size: 50px;
+        }
+      } */
+
+      /* desktop */
+      /* @media (min-width: 1000px) {
+        body {
+          background-color: lightblue;
+          font-size: 70px;
+        }
+      }  */
+
+      .container2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .card {
+        background-color: lightgray;
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .container2 {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .container2 {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>My website</h1>
+      <p>This layout breaks on mobile</p>
+    </div> -->
+
+    <!-- <h1>Resize me!</h1> -->
+
+    <div class="container">
+      <p>
+        this box uses % for width, em for padding, rem for font, vh for height
+      </p>
+    </div>
+
+    <!-- <img
+      src="/images/photo-small.jpg"
+      srcset="
+        images/photo-small.jpg   600w,
+        images/photo-medium.jpg 1000w,
+        images/photo-large.jpg  1600w
+      "
+      sizes="(max-width: 600px) 100vw,
+       (max-width: 1000px) 50vw
+       33vw
+       "
+      alt="dog picture"
+    /> -->
+
+    <div class="container2">
+      <div class="card">Card1</div>
+      <div class="card">Card2</div>
+      <div class="card">Card3</div>
+      <div class="card">Card4</div>
+      <div class="card">Card5</div>
+      <div class="card">Card6</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+
+CSS units
+px, %, em, rem, vw, vh
+
+-->
