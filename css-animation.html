@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn {
+            margin-top: 200px;
+            background: #3498db;
+            color: white;
+            width: 300px;
+            height: 50px;
+            padding: 15px 30px;
+            border: none;
+            transition: background 2s ease, transform 3s ease;
+        }
+
+        .btn:active {
+            background: green;
+            transform: translateY(-40px);
+        }
+
+        p {
+            color: yellow;
+            transition: color 5s ease-in-out 3s;
+            font-size: 40px;
+        }
+
+        p:hover {
+             color: tomato;
+        }
+
+        .box {
+            background-color: green;
+            padding: 20px;
+            color: white;
+            /* transform: translateY() */
+            transition: transform 1s ease;
+        }
+
+        .box:hover {
+            /* transform: scale(0.7); */
+            /* transform: rotate(20deg); */
+            /* transform: rotateY(20deg); */
+            /* transform: skewY(20deg); */
+            transform: translateY(-10px) scale(1.6) rotate(5deg);
+        }
+
+        .fade {
+            opacity: 0;
+            margin-bottom: 200px;
+            transition: opacity 1s;
+        }
+
+        .fade:hover {
+            opacity: 1;
+        }
+
+        .properties {
+            display: flex;
+            gap:20px;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 1);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+        } 
+
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s;
+
+        }
+
+        .card:hover img {
+            transform: scale(1.1);
+        }
+
+        .card button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .card button:hover {
+            background: #0c2e44;
+        }
+    </style>
+</head>
+<body>
+     <!-- <button class="btn">Hover me</button>
+     <p>I am a fullstack developer</p>
+
+     <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, iste odio voluptatibus numquam aspernatur voluptatum architecto ipsam harum nulla fugiat reprehenderit, dignissimos debitis expedita aliquam provident ex, iure at modi.</div>
+
+     <h1 class="fade">My Name</h1> -->
+
+     <section class="properties">
+<div class="card">
+    <img src="assets/img1.avif">
+    <h3>Modern Apartment</h3>
+    <p>$1200 / month</p>
+    <button>View Details</button>
+  </div>
+
+  <div class="card">
+       <img src="assets/img2.avif">
+
+    <h3>Cozy House</h3>
+    <p>$1500 / month</p>
+    <button>View Details</button>
+  </div>
+
+  <div class="card">
+     <img src="assets/img3.avif">
+
+    <h3>Luxury Villa</h3>
+    <p>$2500 / month</p>
+    <button>View Details</button>
+  </div>
+</section>
+
+<!-- <script>
+   console.log("YEABSIRA")
+   function x () {}
+</script> -->
+
+<script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+selector {
+transition: property duration timing-function delay;
+}
+
+css transform - tanslate, scale, rotate,  skewX, Y, X
+-->
