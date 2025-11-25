@@ -264,7 +264,276 @@ arithmetic operators
 // }
 
 // continue - skip iteration
-for (let i=0; i<50; i++) {
-  if (i % 2 !== 0) continue
-  console.log(i)
-}
+// for (let i=0; i<50; i++) {
+//   if (i % 2 !== 0) continue
+//   console.log(i)
+// }
+
+// FUNCTIONS - A reusable block of code that performs a specific task.
+    /*
+           avoid repeating code - dont repeat your self
+           organize logic into pieces
+           easier debugging
+           resuable and modular
+           NECCESARY FOR LARGE APPLICATIONS
+           
+    */
+
+  // function funtionName() {
+  //   //code
+  // }
+
+  // functionnName()
+
+  function sayHello () {
+    console.log("Hello Guys")
+    console.log("Hello Gentlemen")
+    console.log("Hello Ladies")
+
+  }
+
+  // sayHello()
+  // sayHello()
+  // sayHello()
+
+  //1, function declaration - can be hoisted
+// function greet() {
+
+// }
+
+// function calculateArea(width, height ) {
+//   const area = width * height
+//   console.log("Area = " + area)
+// }
+
+// calculateArea(10, 5)
+
+// declarations are hoisted
+// greet()
+
+// function greet() {
+//   console.log("HI")
+// }
+
+
+// 2, function expression - cannot be hoisted
+//  const greet = function () {
+//   console.log("HI")
+//  }
+
+//  greet()
+
+//  3, arrow function
+/*
+   use cases
+     - short utility codes
+     - callback functions
+
+    avoid when
+     - mehods in objects / need "this"
+     - constructors
+*/
+// function add(a, b) {
+//   return a+b
+// }
+// const add = (a,b) => a+b
+
+// const result = add(3,4)
+// console.log(result)
+
+// parameters and arguments
+// parameters - placeholder
+// argument - actual values
+
+//  function greet(name) {
+//   //code
+//  }
+
+//  greet("Lily")
+
+//  function fullName(first, last) {
+//   console.log(first + ' ' + last)
+//  }
+
+//  fullName("Abebe", "Kebede")
+
+// DEFAULT PARAMETER
+
+// function register(role = "student") {
+//   console.log("Registered as ", role)
+// }
+
+// register();
+// register("teacher")
+
+// Rest parameters
+//  function sum(num1, num2, ...numbers) {
+//   console.log(numbers)
+//   numbers[3]
+//   numbers[4]
+//  }
+
+//  sum(1, 2, 3, 4, 5, 9, 8)
+
+// return statement - to return a value - primitives, derived, other functions, to stop execution
+// function multiple(a,b) {
+//   return a * b
+// }
+
+// const result = multiple(4, 5)
+// console.log(result)
+// console.log(multiple(4, 5))
+
+// function check_age(age) {
+//   // if (age < 18) return
+//   if (age < 0) {
+//     console.log("please enter correct age")
+//     return
+//   }
+
+//   console.log("legal to elect")
+// }
+
+// check_age(20)
+// check_age(17)
+// check_age(-10)
+
+// function makeMultiplier(x) { // higher order function
+//   return function(num) {
+//     return num * x
+//   }
+// }
+
+// const triple = makeMultiplier(3)
+// const double = makeMultiplier(2)
+
+// console.log(triple(5))
+// console.log(triple(6))
+// console.log(double(4))
+// console.log(double(7))
+
+
+// SCOPE - defines where variables are accesible
+  // SCOPE = BLOCK = {}
+  // SCOPE - GLOBAL, LOCAL
+  // let appname = "Inventory system"
+  // function abc() {
+  // let appname2 = "Inventory system"
+  // }
+
+  // console.log(appname2) - runtime error
+
+  // function countVowels(str) {
+  //   let count = 0;
+  //   const vawels = "aeiou"
+
+  //   for (let i =0; i < str.length; i++) {
+  //     if (vawels.includes(str[i]) ) {
+  //       count++
+  //     }
+  //   }
+
+  //   return count
+
+  // }
+
+  // const result = countVowels("Yohannes");
+  // console.log(result)
+
+ // // ARRAYS - to store multiple values in one variable
+  // let fruits = ["apple", "banana", "orange"]
+
+  // let cars = new Array("Toyota", "BMW", "Honda")
+
+  // // mixed data is allowed
+  // let mixed = ["john", 25, true, null, 'y', ["wre", "oi"], 0, "yeabsira"]
+  // console.log(mixed)
+
+  // // accesing and updating elements
+  // console.log(mixed[0])
+  // mixed[1] = "abebe"
+  // mixed[3]=100
+  // console.log(mixed)
+
+  // console.log(mixed.length)
+  // console.log(mixed[mixed.length - 1])
+
+  // ARRAY METHODS
+  // 1, push - to push elements into the array to the end
+//   let names = ["abebe"];
+//   names.push("sami")
+//   names.push(3)
+//   names.push('u')
+//   names.push(true)
+//   names.push([1, 2, 3])
+//   names.push(null)
+
+//   console.log(names)
+
+//   // 2, pop - remove from end
+//   names.pop()
+//   names.pop()
+//   console.log(names)
+
+//   // 3, unshift - add to start
+//   names.unshift(100)
+//   names.unshift("hey")
+
+//   // 4, shift - remove from start
+//   names.shift();
+//   console.log(names)
+
+//   // 5, slice - copy portion (no change to the original)
+//   // names.slice(starting_index, ending_index)
+//  let copied =  names.slice(1, 4)
+//   console.log(copied)
+//   console.log(names)
+
+//   // 6, splice - add/remove items (modifies original)
+//   names.splice(1,0)
+//   console.log(names)
+
+
+// iteration methods  - accept anonymous callback functions
+//  1, forEach - loop through each item. does not return anything
+// let nums = [1,2,3,4]
+
+// nums.forEach(function(n){
+//   console.log(n * 2)
+// })
+
+// // 2, map - create a new transformed array, returns a value
+// let x = nums.map((n)=>n*2)
+  
+// console.log(x)
+
+// // 3, filter - keep items that meet condition, returns a value
+// let ages = [12, 20, 17, 30, 25]
+//  let adult = ages.filter((age) => age >= 18)
+//  console.log(adult)
+
+// //  reduce - reduce array into a single value
+// let nums2 = [1,2,3,4,5,3];
+// let sum = nums2.reduce((total, n)=> total + n, 0)
+// console.log(sum)
+
+// // 4, find - returns first match
+// let result = nums2.find(function(n) {
+//  return  n == 5
+// })
+// console.log(result)
+
+// ARRAY DISTRUCTURING
+let numbers = [10, 20, 30]
+let [a, b] = numbers
+// console.log(a, b)
+
+let [e,,f] = numbers //skip
+// console.log(e,f)
+
+// swap variables
+let x = 5;
+let y = 10;
+[x, y] = [y, x]
+console.log(x)
+console.log(y)
