@@ -5,6 +5,8 @@
 // let boolean = true 
 // let pi = 3.14
 
+
+
 // let number3;
 // number = 7;
 // const number2 = 6;
@@ -524,16 +526,129 @@ arithmetic operators
 // console.log(result)
 
 // ARRAY DISTRUCTURING
-let numbers = [10, 20, 30]
-let [a, b] = numbers
-// console.log(a, b)
+// let numbers = [10, 20, 30]
+// let [a, b] = numbers
+// // console.log(a, b)
 
-let [e,,f] = numbers //skip
-// console.log(e,f)
+// let [e,,f] = numbers //skip
+// // console.log(e,f)
 
-// swap variables
-let x = 5;
-let y = 10;
-[x, y] = [y, x]
-console.log(x)
-console.log(y)
+// // swap variables
+// let x = 5;
+// let y = 10;
+// temp = x
+//  x = y
+//  y = temp
+// [x, y] = [y, x]
+// console.log(x)
+// console.log(y)
+
+// ES6
+// 1. arrow function
+// const add = (a, b) => {
+//   // logic
+//   return a + b
+// }
+  
+// const square = x => x * x
+// const sayHi = () => console.log("Hello")
+
+// // arrow functions and lexical this
+// const person = {
+//   name: "Yeabsira",
+//   sayHi: function () {
+//     setTimeout(function() {
+//       console.log("Hi " + this.name) // this refers the window
+//     }, 1000)
+//   }
+// }
+
+// person.sayHi()
+
+// const person2 = {
+//   name: "Yeabsira",
+//   sayHi: function () {
+//     setTimeout(() => {
+//       console.log("Hi " + this.name) // this refers to the current object
+//     }, 1000)
+//   }
+// }
+
+// person2.sayHi()
+
+// TEMPLATE LITERALS AND STRING METHODS
+// const name2 = "Sara"
+// console.log("Hello " + name2 + " welcome")
+
+// console.log(`Hello ${name2} welcome`) //ES6 FEATURE
+
+// const paragraph = `wrwwewqe wehewgroewr rwhoiw e whre oi
+// oewippur oe ew
+// `
+// console.log(paragraph)
+
+// console.log(`5 + 5 = ${5+5}`)
+
+// // startsWith()
+// const x = "hello".startsWith("he")
+// console.log(x)
+
+// // endsWith()
+// "hello".endsWith("lo")
+
+// // includes
+// "banana".includes("nan")
+
+// //repeat
+// const y  = "ha".repeat(10);
+// console.log(y)
+
+// DEFAULT PARAMETERS
+// function printName(name = "abebe"){
+//   console.log(name)
+// }
+
+// printName()
+// printName("Bisrat")
+
+// // function greet(name = "Guest") {}
+// function greet(name) {
+//   name = name || "Guest"
+//   console.log(name)
+// }
+
+// greet()
+// greet("waiter")
+
+// REST PARAMETERS
+// function sum(...numbers) {
+//   console.log(numbers)
+// }
+
+// sum(1,2,3,4,5, "eworiwe", 7.8, 'r')
+
+// const colors = ["red", "green", "blue"]
+// const [primary, scondary, tertiary] = colors
+// console.log(primary)
+
+
+// const user = {
+//   age: 20,
+//   name: "Liya",
+//   country: "Ethiopia"
+// }
+
+// const name = "eqrewre"
+
+// // renaming object key name while distructuring
+// const {name: fullName, age: rtyui} = user;
+// // console.log(name, age, iyoio)
+// console.log(fullName)
+// console.log(rtyui)
+
+import { addNumbers, PI } from "./script2.js";
+import abc from "./script2.js";
+
+console.log(PI)
+addNumbers(2, 3)
+// console.log(abc)
