@@ -646,9 +646,144 @@ arithmetic operators
 // console.log(fullName)
 // console.log(rtyui)
 
-import { addNumbers, PI } from "./script2.js";
-import abc from "./script2.js";
+// import { addNumbers, PI } from "./script2.js";
+// import abc from "./script2.js";
 
-console.log(PI)
-addNumbers(2, 3)
-// console.log(abc)
+// console.log(PI)
+// addNumbers(2, 3)
+// // console.log(abc)
+
+
+
+// CODING QUESTIONS
+// Q1, find the largest of 2 numbers
+function largest(a, b) {
+  if(a > b) {
+      return a
+  } else {
+      return b;
+  }
+}
+
+console.log(largest(10, 20));
+
+// Q2, check if a number is even or odd
+function evenOrOdd(n) {
+  if(n % 2 === 0) 
+    return "even"
+
+   return "odd"  
+}
+
+// const x = num => num % 2 === 0 ?"even" :"odd"
+console.log(evenOrOdd(9))
+
+// Q3, sum of all numbers from 1 to N
+function sumToN(n) {
+  let sum = 0;
+  for (let i=1; i <= n; i++) {
+    sum = sum + i
+  }
+
+  return sum
+}
+
+console.log(sumToN(10))
+
+// Q4, count the number of vowles in a string
+function countVowels(str) { 
+  let count = 0;
+  let vowles = "aeiouAEIOU"
+
+  for(let char of str) {
+    if (vowles.includes(char)) {
+      // count++
+      count = count + 1
+    }
+  }
+
+  return count
+}
+
+console.log(countVowels("transformers"))
+
+// Q5, reverse the string
+function reverseString(str) {
+  let arr = str.split("")
+  let reversedArray = arr.reverse()
+  let reversedString = reversedArray.join("")
+
+  return reversedString
+}
+
+console.log(reverseString("abcd"))
+
+// Q6, find the factorial of a number
+function findFactorial(n) {
+  let factorial = 1;
+  for (let i=1; i<=n; i++) {
+    // factorial = factorial * i
+    factorial *= i
+  }
+
+  return factorial
+
+}
+
+console.log(findFactorial(10))
+
+// Q7, check if a string is a palindrome
+function isPalindrome(str) {
+ let reversed  =  reverseString(str)
+
+//  if (str === reversed) {
+//   return true
+//  } else {
+//   return false
+//  }
+
+return str === reversed
+}
+
+console.log(isPalindrome("mommy"))
+
+
+// Q8, count digits in a number
+function countDigits(n) {
+  let string = n.toString()
+  let length = string.length
+
+  return length
+}
+console.log(countDigits(134567))
+
+
+// Q9, find the smallest number in an array
+function smallest(arr) {
+  let min = arr[0]
+  for (let num of arr){
+    if (num < min) {
+      min = num
+    }
+  }
+
+  return min
+
+}
+
+console.log("min: ", smallest([3,1,4,2]))
+
+// Q10, find the largest number in an array
+function largest_number(arr) {
+  let max = arr[0]
+
+  for (let num of arr){
+    if (num > max) {
+      max = num
+    }
+  }
+
+  return max
+
+}
+console.log("max : ", largest_number([3,1,4,2]))
