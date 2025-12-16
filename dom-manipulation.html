@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creating,element -->
+     <!-- Document. -->
+
+     <!-- keydown/ mouseover/ mouseout -->
+      <button id="btn">on click</button>
+ <h1 id="abc">0</h1>
+
+        <script>
+             const btn = document.getElementById("btn");
+             btn.addEventListener("mouseover", ()=> {
+                btn.style.backgroundColor = "yellow"
+             })
+
+             btn.addEventListener("mouseout", () => {
+                btn.style.backgroundColor = "white"
+             })
+
+             document.addEventListener("keydown", (e)=> {
+                console.log("key: ", e.key)
+              if (  e.key = "Escape") {
+                // page moving backward logic
+              }
+             })
+
+            //  state management is hard
+            //  const btn = document.getElementById("btn");
+             const abc = document.getElementById("abc");
+            let count = 0;
+            btn.addEventListener("click", () => {
+                count++
+                abc.textContent = count
+            })
+
+            // BUILD ONE - REUSE ANYWHERE
+        </script>
+</body>
+</html>

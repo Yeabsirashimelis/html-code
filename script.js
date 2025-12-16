@@ -657,133 +657,178 @@ arithmetic operators
 
 // CODING QUESTIONS
 // Q1, find the largest of 2 numbers
-function largest(a, b) {
-  if(a > b) {
-      return a
-  } else {
-      return b;
-  }
-}
+// function largest(a, b) {
+//   if(a > b) {
+//       return a
+//   } else {
+//       return b;
+//   }
+// }
 
-console.log(largest(10, 20));
+// console.log(largest(10, 20));
 
-// Q2, check if a number is even or odd
-function evenOrOdd(n) {
-  if(n % 2 === 0) 
-    return "even"
+// // Q2, check if a number is even or odd
+// function evenOrOdd(n) {
+//   if(n % 2 === 0) 
+//     return "even"
 
-   return "odd"  
-}
+//    return "odd"  
+// }
 
-// const x = num => num % 2 === 0 ?"even" :"odd"
-console.log(evenOrOdd(9))
+// // const x = num => num % 2 === 0 ?"even" :"odd"
+// console.log(evenOrOdd(9))
 
-// Q3, sum of all numbers from 1 to N
-function sumToN(n) {
-  let sum = 0;
-  for (let i=1; i <= n; i++) {
-    sum = sum + i
-  }
+// // Q3, sum of all numbers from 1 to N
+// function sumToN(n) {
+//   let sum = 0;
+//   for (let i=1; i <= n; i++) {
+//     sum = sum + i
+//   }
 
-  return sum
-}
+//   return sum
+// }
 
-console.log(sumToN(10))
+// console.log(sumToN(10))
 
-// Q4, count the number of vowles in a string
-function countVowels(str) { 
-  let count = 0;
-  let vowles = "aeiouAEIOU"
+// // Q4, count the number of vowles in a string
+// function countVowels(str) { 
+//   let count = 0;
+//   let vowles = "aeiouAEIOU"
 
-  for(let char of str) {
-    if (vowles.includes(char)) {
-      // count++
-      count = count + 1
-    }
-  }
+//   for(let char of str) {
+//     if (vowles.includes(char)) {
+//       // count++
+//       count = count + 1
+//     }
+//   }
 
-  return count
-}
+//   return count
+// }
 
-console.log(countVowels("transformers"))
+// console.log(countVowels("transformers"))
 
-// Q5, reverse the string
-function reverseString(str) {
-  let arr = str.split("")
-  let reversedArray = arr.reverse()
-  let reversedString = reversedArray.join("")
+// // Q5, reverse the string
+// function reverseString(str) {
+//   let arr = str.split("")
+//   let reversedArray = arr.reverse()
+//   let reversedString = reversedArray.join("")
 
-  return reversedString
-}
+//   return reversedString
+// }
 
-console.log(reverseString("abcd"))
+// console.log(reverseString("abcd"))
 
-// Q6, find the factorial of a number
-function findFactorial(n) {
-  let factorial = 1;
-  for (let i=1; i<=n; i++) {
-    // factorial = factorial * i
-    factorial *= i
-  }
+// // Q6, find the factorial of a number
+// function findFactorial(n) {
+//   let factorial = 1;
+//   for (let i=1; i<=n; i++) {
+//     // factorial = factorial * i
+//     factorial *= i
+//   }
 
-  return factorial
+//   return factorial
 
-}
+// }
 
-console.log(findFactorial(10))
+// console.log(findFactorial(10))
 
-// Q7, check if a string is a palindrome
-function isPalindrome(str) {
- let reversed  =  reverseString(str)
+// // Q7, check if a string is a palindrome
+// function isPalindrome(str) {
+//  let reversed  =  reverseString(str)
 
-//  if (str === reversed) {
-//   return true
-//  } else {
-//   return false
-//  }
+// //  if (str === reversed) {
+// //   return true
+// //  } else {
+// //   return false
+// //  }
 
-return str === reversed
-}
+// return str === reversed
+// }
 
-console.log(isPalindrome("mommy"))
-
-
-// Q8, count digits in a number
-function countDigits(n) {
-  let string = n.toString()
-  let length = string.length
-
-  return length
-}
-console.log(countDigits(134567))
+// console.log(isPalindrome("mommy"))
 
 
-// Q9, find the smallest number in an array
-function smallest(arr) {
-  let min = arr[0]
-  for (let num of arr){
-    if (num < min) {
-      min = num
-    }
-  }
+// // Q8, count digits in a number
+// function countDigits(n) {
+//   let string = n.toString()
+//   let length = string.length
 
-  return min
+//   return length
+// }
+// console.log(countDigits(134567))
 
-}
 
-console.log("min: ", smallest([3,1,4,2]))
+// // Q9, find the smallest number in an array
+// function smallest(arr) {
+//   let min = arr[0]
+//   for (let num of arr){
+//     if (num < min) {
+//       min = num
+//     }
+//   }
 
-// Q10, find the largest number in an array
-function largest_number(arr) {
-  let max = arr[0]
+//   return min
 
-  for (let num of arr){
-    if (num > max) {
-      max = num
-    }
-  }
+// }
 
-  return max
+// console.log("min: ", smallest([3,1,4,2]))
 
-}
-console.log("max : ", largest_number([3,1,4,2]))
+// // Q10, find the largest number in an array
+// function largest_number(arr) {
+//   let max = arr[0]
+
+//   for (let num of arr){
+//     if (num > max) {
+//       max = num
+//     }
+//   }
+
+//   return max
+
+// }
+// console.log("max : ", largest_number([3,1,4,2]))
+
+// DOM 
+// window - represent the browser it self
+// document - represent the webpage loaded inside the window
+
+// window.alert("server crashes")
+// console.log(window.location)
+// console.log(window.scrollY)
+
+// console.log(document)
+
+// //selecting elements in the dom
+// // document.getElementBYyId()
+// const abc = document.getElementById("abc")
+// // abc.textContent = 'def'
+// // abc.style.color = "red"
+// console.log(abc)
+
+// // classname
+// const heading = document.getElementsByClassName("heading")
+// // console.log(heading[0])
+
+// // querySelector - most used - the first match from css selector
+// const x = document.querySelector(".heading")
+// console.log(x)
+// x.style.backgroundColor = "red"
+
+// // querySelectorAll - most used
+
+// abc.textContent= "red"
+
+// const b = document.querySelector(".xyz")
+// console.log(b)
+// b.innerHTML = "<strong>Bold text</strong"
+
+// const image = document.getElementById("photo")
+// console.log(image)
+// image.setAttribute("src", "/assets/img2.avif")
+
+// const input = document.getElementById("input")
+// input.setAttribute("type", "number")
+
+//DOM MANIPULATION AND EVENTS
+// creating elements
+ 
