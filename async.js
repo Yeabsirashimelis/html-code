@@ -95,21 +95,50 @@ const dataFromForm = {
     body: "learning fullstack in 2025 does worth. so learn and develop things."
 }
 
-async function createPost() {
-    try {
-        const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
-         method: "POST",
+// async function createPost() {
+//     try {
+//         const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+//          method: "POST",
+//         body: JSON.stringify(dataFromForm)
+//     });
+
+//     console.log(response)
+
+//     console.log("post created successfully")
+//     } catch (error) {
+//         console.log(error)
+//     }
+ 
+    
+// }
+
+// createPost()
+
+async function updatePost() {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
+        method:"PUT",
         body: JSON.stringify(dataFromForm)
-    });
+    } )
 
     console.log(response)
 
-    console.log("post created successfully")
+    const data = await response.json();
+    console.log(data)
+}
+
+// updatePost()
+
+async function deletePost() {
+    try {
+        const response = await fetch("https://jsonplaceholder.typicode.com/posts/1", {
+        method: "DELETE"
+   })
+
+        console.log("deleted", response.ok)
     } catch (error) {
         console.log(error)
     }
- 
-    
+      
 }
 
-createPost()
+deletePost()
