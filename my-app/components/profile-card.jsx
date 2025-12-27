@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+import React from "react"
 
 export default function ProfileCard({name, age, avatar}) {
     return(
@@ -11,8 +11,3 @@ export default function ProfileCard({name, age, avatar}) {
 }
 
 
-ProfileCard.PropTypes = {
-    name: PropTypes.string.isRequired,
-    age: PropTypes.number.isRequired,
-    avatar: PropTypes.string.isRequired
-}
