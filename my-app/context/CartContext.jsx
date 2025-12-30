@@ -10,7 +10,7 @@ export function CartProvider({ children }) {
       id: 1,
       name: "iphone 12",
       price: 800,
-      description: "this is the best phone you will ever has",
+      description: "this is the best phone you will ever has.",
     },
   ]);
 
